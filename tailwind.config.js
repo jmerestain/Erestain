@@ -6,7 +6,7 @@ module.exports = {
     standardFontWeights: true
   },
   purge: [
-    // "./src/**/*.svelte",
+    "./src/**/*.svelte",
   ],
   theme: {
     extend: {}
