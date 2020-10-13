@@ -23,7 +23,7 @@
 				</div>
 			</div>
 			<div class="flex flex-col justify-center flex-wrap gap-2">
-				<p class="text-primary text-3xl w-full mt-5 tracking-wide p-5 rounded-lg
+				<p class="text-primary text-xl md:text-2xl lg:text-3xl w-full mt-5 tracking-wide p-5 rounded-lg
 				leading-relaxed font-caption md:text-justify text-center mb-10 border-juris">
 					You can call me <span class="font-bold text-secondary">JM</span>.
 					I am a <span class="font-bold cunderline">full stack developer</span> from the Philippines;
