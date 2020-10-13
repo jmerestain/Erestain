@@ -55,6 +55,9 @@ var app = (function () {
     function children(element) {
         return Array.from(element.childNodes);
     }
+    function set_style(node, key, value, important) {
+        node.style.setProperty(key, value, important ? 'important' : '');
+    }
     function custom_event(type, detail) {
         const e = document.createEvent('CustomEvent');
         e.initCustomEvent(type, false, false, detail);
@@ -332,18 +335,25 @@ var app = (function () {
     	let span1;
     	let t14;
     	let t15;
+    	let a;
+    	let t17;
     	let div9;
     	let div7;
     	let img0;
     	let img0_src_value;
-    	let t16;
-    	let p5;
     	let t18;
+    	let p5;
+    	let t20;
     	let div8;
     	let img1;
     	let img1_src_value;
-    	let t19;
+    	let t21;
     	let p6;
+    	let t23;
+    	let footer;
+    	let p7;
+    	let t25;
+    	let p8;
 
     	const block = {
     		c: function create() {
@@ -380,61 +390,81 @@ var app = (function () {
     			span1.textContent = "full stack developer";
     			t14 = text(" from the Philippines;\n\t\t\t\t\tcurrently a sophomore in the Ateneo De Manila University.");
     			t15 = space();
+    			a = element("a");
+    			a.textContent = "Get in Touch";
+    			t17 = space();
     			div9 = element("div");
     			div7 = element("div");
     			img0 = element("img");
-    			t16 = space();
+    			t18 = space();
     			p5 = element("p");
     			p5.textContent = "Punta Shop";
-    			t18 = space();
+    			t20 = space();
     			div8 = element("div");
     			img1 = element("img");
-    			t19 = space();
+    			t21 = space();
     			p6 = element("p");
     			p6.textContent = "Memory Matrix";
+    			t23 = space();
+    			footer = element("footer");
+    			p7 = element("p");
+    			p7.textContent = "jose emmanuel n. erestain iv";
+    			t25 = space();
+    			p8 = element("p");
+    			p8.textContent = "+63 998 186 7756";
     			attr_dev(h1, "class", "text-primary text-center text-5xl select-none font-bantayog tracking-wider mt-5 font-bold svelte-16sjn9b");
-    			add_location(h1, file, 6, 3, 178);
-    			add_location(p0, file, 12, 5, 475);
-    			add_location(div0, file, 11, 4, 464);
-    			add_location(p1, file, 15, 5, 531);
-    			add_location(div1, file, 14, 4, 520);
-    			add_location(p2, file, 18, 5, 580);
-    			add_location(div2, file, 17, 4, 569);
-    			add_location(p3, file, 21, 5, 629);
-    			add_location(div3, file, 20, 4, 618);
+    			add_location(h1, file, 6, 3, 200);
+    			add_location(p0, file, 12, 5, 497);
+    			add_location(div0, file, 11, 4, 486);
+    			add_location(p1, file, 15, 5, 553);
+    			add_location(div1, file, 14, 4, 542);
+    			add_location(p2, file, 18, 5, 602);
+    			add_location(div2, file, 17, 4, 591);
+    			add_location(p3, file, 21, 5, 651);
+    			add_location(div3, file, 20, 4, 640);
     			attr_dev(div4, "class", "flex justify-center md:justify-between text-center text-xl gap-2\n\t\t\tfont-bold text-tertiary flex-wrap font-caption items-center select-none svelte-16sjn9b");
-    			add_location(div4, file, 9, 3, 306);
+    			add_location(div4, file, 9, 3, 328);
     			attr_dev(span0, "class", "font-bold text-secondary svelte-16sjn9b");
-    			add_location(span0, file, 27, 21, 913);
+    			add_location(span0, file, 27, 21, 944);
     			attr_dev(span1, "class", "font-bold cunderline svelte-16sjn9b");
-    			add_location(span1, file, 28, 12, 975);
+    			add_location(span1, file, 28, 12, 1006);
     			attr_dev(p4, "class", "text-primary text-3xl w-full mt-5 tracking-wide p-5 rounded-lg\n\t\t\t\tleading-relaxed font-caption md:text-justify text-center mb-10 border-juris svelte-16sjn9b");
-    			add_location(p4, file, 25, 4, 737);
-    			attr_dev(div5, "class", "flex justify-center flex-wrap gap-2");
-    			add_location(div5, file, 24, 3, 683);
+    			add_location(p4, file, 25, 4, 768);
+    			attr_dev(a, "href", "mailto:jose.erestain@obf.ateneo.edu");
+    			attr_dev(a, "class", "px-4 py-3 font-caption text-primary mx-auto\n\t\t\t\tfont-bold tracking-wider text-center max-w-sm svelte-16sjn9b");
+    			set_style(a, "background", "#087F8C");
+    			add_location(a, file, 31, 4, 1167);
+    			attr_dev(div5, "class", "flex flex-col justify-center flex-wrap gap-2");
+    			add_location(div5, file, 24, 3, 705);
     			attr_dev(div6, "class", "flex flex-col gap-10");
-    			add_location(div6, file, 5, 2, 140);
+    			add_location(div6, file, 5, 2, 162);
     			attr_dev(img0, "class", "object-cover w-full h-64 object-top flex-shrink rounded-t-md grayscale svelte-16sjn9b");
     			if (img0.src !== (img0_src_value = "./assets/img/punta_thumb.png")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Punta Landing Page");
-    			add_location(img0, file, 35, 4, 1291);
+    			add_location(img0, file, 41, 4, 1539);
     			attr_dev(p5, "class", "bg-secondary text-primary p-2 shadow-lg\n\t\t\t\ttext-center font-caption font-bold rounded-b-md text-lg svelte-16sjn9b");
-    			add_location(p5, file, 37, 4, 1446);
+    			add_location(p5, file, 43, 4, 1694);
     			attr_dev(div7, "class", "flex flex-col max-w-xl");
-    			add_location(div7, file, 34, 3, 1250);
+    			add_location(div7, file, 40, 3, 1498);
     			attr_dev(img1, "class", "object-cover w-full h-64 object-center flex-shrink rounded-t-md grayscale svelte-16sjn9b");
     			if (img1.src !== (img1_src_value = "./assets/img/memory-matrix_thumb.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Memory Matrix");
-    			add_location(img1, file, 43, 4, 1637);
+    			add_location(img1, file, 49, 4, 1885);
     			attr_dev(p6, "class", "bg-secondary text-primary p-2 shadow-lg\n\t\t\t\ttext-center font-caption font-bold rounded-b-md text-lg svelte-16sjn9b");
-    			add_location(p6, file, 45, 4, 1798);
+    			add_location(p6, file, 51, 4, 2046);
     			attr_dev(div8, "class", "flex flex-col max-w-xl");
-    			add_location(div8, file, 42, 3, 1596);
+    			add_location(div8, file, 48, 3, 1844);
     			attr_dev(div9, "class", "flex flex-wrap mt-10 justify-center lg:justify-between gap-4 items-center mb-10");
-    			add_location(div9, file, 33, 2, 1153);
-    			attr_dev(div10, "class", "container mx-auto py-4 flex flex-col px-10");
-    			add_location(div10, file, 4, 1, 81);
-    			attr_dev(main, "class", "h-full w-full min-w-screen min-h-screen px-4 svelte-16sjn9b");
+    			add_location(div9, file, 39, 2, 1401);
+    			attr_dev(div10, "class", "container mx-auto py-4 flex flex-col px-10 between");
+    			add_location(div10, file, 4, 1, 95);
+    			attr_dev(p7, "class", "font-caption text-gray-600 text-xs text-center svelte-16sjn9b");
+    			add_location(p7, file, 59, 2, 2283);
+    			attr_dev(p8, "class", "font-caption text-gray-600 text-xs text-center svelte-16sjn9b");
+    			add_location(p8, file, 62, 2, 2383);
+    			attr_dev(footer, "class", "container mx-auto px-10 flex justify-between pb-5");
+    			add_location(footer, file, 58, 1, 2214);
+    			attr_dev(main, "class", "h-full w-full min-w-screen min-h-screen px-4 flex flex-col svelte-16sjn9b");
     			add_location(main, file, 3, 0, 20);
     		},
     		l: function claim(nodes) {
@@ -466,17 +496,24 @@ var app = (function () {
     			append_dev(p4, t12);
     			append_dev(p4, span1);
     			append_dev(p4, t14);
-    			append_dev(div10, t15);
+    			append_dev(div5, t15);
+    			append_dev(div5, a);
+    			append_dev(div10, t17);
     			append_dev(div10, div9);
     			append_dev(div9, div7);
     			append_dev(div7, img0);
-    			append_dev(div7, t16);
+    			append_dev(div7, t18);
     			append_dev(div7, p5);
-    			append_dev(div9, t18);
+    			append_dev(div9, t20);
     			append_dev(div9, div8);
     			append_dev(div8, img1);
-    			append_dev(div8, t19);
+    			append_dev(div8, t21);
     			append_dev(div8, p6);
+    			append_dev(main, t23);
+    			append_dev(main, footer);
+    			append_dev(footer, p7);
+    			append_dev(footer, t25);
+    			append_dev(footer, p8);
     		},
     		p: noop,
     		i: noop,

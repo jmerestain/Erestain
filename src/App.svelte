@@ -1,8 +1,8 @@
 <script>
 </script>
 
-<main class="h-full w-full min-w-screen min-h-screen px-4">
-	<div class="container mx-auto py-4 flex flex-col px-10">
+<main class="h-full w-full min-w-screen min-h-screen px-4 flex flex-col">
+	<div class="container mx-auto py-4 flex flex-col px-10 between">
 		<div class="flex flex-col gap-10">
 			<h1 class="text-primary text-center text-5xl select-none font-bantayog tracking-wider mt-5 font-bold">
 				ERESTAIN
@@ -22,13 +22,19 @@
 					<p>Technical Architecture</p>
 				</div>
 			</div>
-			<div class="flex justify-center flex-wrap gap-2">
+			<div class="flex flex-col justify-center flex-wrap gap-2">
 				<p class="text-primary text-3xl w-full mt-5 tracking-wide p-5 rounded-lg
 				leading-relaxed font-caption md:text-justify text-center mb-10 border-juris">
 					You can call me <span class="font-bold text-secondary">JM</span>.
 					I am a <span class="font-bold cunderline">full stack developer</span> from the Philippines;
 					currently a sophomore in the Ateneo De Manila University.
 				</p>
+				<a href="mailto:jose.erestain@obf.ateneo.edu"
+				class="px-4 py-3 font-caption text-primary mx-auto
+				font-bold tracking-wider text-center max-w-sm" 
+				style="background: #087F8C">
+					Get in Touch
+				</a>
 			</div>
 		</div>
 		<div class="flex flex-wrap mt-10 justify-center lg:justify-between gap-4 items-center mb-10">
@@ -50,6 +56,14 @@
 			</div>
 		</div>
 	</div>
+	<footer class="container mx-auto px-10 flex justify-between pb-5">
+		<p class="font-caption text-gray-600 text-xs text-center">
+			jose emmanuel n. erestain iv
+		</p>
+		<p class="font-caption text-gray-600 text-xs text-center">
+			+63 998 186 7756
+		</p>
+	</footer>
 </main>
 
 <style>
