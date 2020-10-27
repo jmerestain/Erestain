@@ -7,8 +7,7 @@
 			<h1 class="text-primary text-center text-5xl select-none font-bantayog tracking-wider mt-5 font-bold">
 				ERESTAIN
 			</h1>
-			<div class="flex justify-center md:justify-between text-center text-xl gap-2
-			font-bold text-tertiary flex-wrap font-caption items-center select-none">
+			<div class="text-secondary flex justify-between text-xl font-medium">
 				<div>
 					<p>Blockchain Engineering</p>
 				</div>
@@ -21,12 +20,15 @@
 				<div>
 					<p>Technical Architecture</p>
 				</div>
+				<div>
+					<p>Cybersecurity</p>
+				</div>
 			</div>
 			<div class="flex flex-col justify-center flex-wrap gap-2">
 				<p class="text-primary text-xl md:text-2xl lg:text-3xl w-full mt-5 tracking-wide p-5 rounded-lg
-				leading-relaxed font-caption md:text-justify text-center mb-10 border-juris">
+				leading-10 font-caption md:text-justify text-center mb-10 border-juris">
 					You can call me <span class="font-bold text-secondary">JM</span>.
-					I am a <span class="font-bold cunderline">full stack developer</span> from the Philippines;
+					I am a <span class="font-bold cunderline leading-10">full stack developer</span> from the Philippines;
 					currently a sophomore in the Ateneo De Manila University.
 				</p>
 				<a href="mailto:jose.erestain@obf.ateneo.edu"
@@ -41,9 +43,25 @@
 			<div class="flex flex-col max-w-xl">
 				<img class="object-cover w-full h-64 object-top flex-shrink rounded-t-md grayscale"
 				src="./assets/img/punta_thumb.png" alt="Punta Landing Page" />
-				<p class="bg-secondary text-primary p-2 shadow-lg
+				<a href="https://punta.shop" class="bg-secondary text-primary p-2 shadow-lg
 				text-center font-caption font-bold rounded-b-md text-lg">
 					Punta Shop
+				</a>
+			</div>
+			<div class="flex flex-col max-w-xl">
+				<img class="object-cover w-full h-64 object-center flex-shrink rounded-t-md grayscale"
+				src="./assets/img/memory-matrix_thumb.png" alt="Memory Matrix" />
+				<a href="https://memory-matrix.vercel.app" class="bg-secondary text-primary p-2 shadow-lg
+				text-center font-caption font-bold rounded-b-md text-lg">
+					Memory Matrix
+				</a>
+			</div>
+			<div class="flex flex-col max-w-xl">
+				<img class="object-cover w-full h-64 object-center flex-shrink rounded-t-md grayscale"
+				src="./assets/img/memory-matrix_thumb.png" alt="Memory Matrix" />
+				<p class="bg-secondary text-primary p-2 shadow-lg
+				text-center font-caption font-bold rounded-b-md text-lg">
+					Match the Color
 				</p>
 			</div>
 			<div class="flex flex-col max-w-xl">
@@ -78,7 +96,7 @@
 	src: url('/assets/fonts/Bantayog-Regular.otf');
 }
 .cunderline {
-	border-bottom: 4px solid #087F8C;
+	border-bottom: 3px solid #087F8C;
 }
 .text-primary {
 	color: #f4f4f4;
